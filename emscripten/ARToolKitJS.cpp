@@ -509,7 +509,7 @@ extern "C" {
 		}
 	}
 
-	int getTransMatSquare(int id, int markerIndex, int markerWidth) {
+	int getTransMatSquare(int id, int markerIndex, ARdouble markerWidth) {
 		if (arControllers.find(id) == arControllers.end()) { return ARCONTROLLER_NOT_FOUND; }
 		arController *arc = &(arControllers[id]);
 
@@ -523,7 +523,7 @@ extern "C" {
 		return 0;
 	}
 
-	int getTransMatSquareCont(int id, int markerIndex, int markerWidth) {
+	int getTransMatSquareCont(int id, int markerIndex, ARdouble markerWidth) {
 		if (arControllers.find(id) == arControllers.end()) { return ARCONTROLLER_NOT_FOUND; }
 		arController *arc = &(arControllers[id]);
 
